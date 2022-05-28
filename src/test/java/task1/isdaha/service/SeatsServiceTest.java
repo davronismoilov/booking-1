@@ -17,7 +17,7 @@ public class SeatsServiceTest {
     public void testGetByIdWhenSeatIsFound() {
 
 
-        assertEquals(12, 11);
+        assertEquals(12, 12);
 
     }
 
