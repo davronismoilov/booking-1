@@ -7,6 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Import;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import task1.isdaha.config.SwaggerConfig;
 import task1.isdaha.config.WebConfig;
@@ -18,11 +21,16 @@ import task1.isdaha.repository.RoleRepository;
 @EntityScan(value = "task1")
 @EnableSwagger2
 @Import({SwaggerConfig.class , WebConfig.class})
+@RestController
+@RequestMapping("/test")
 public class MyProjectApplication implements CommandLineRunner {
 //    @Autowired
 //    RoleRepository roleRepository;
 
-
+     @GetMapping
+     public String test(){
+         return "github pushing Bekzod aka:";
+     }
 
 
     public static void main(String[] args) {

@@ -32,7 +32,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .addFilterAfter(new JwtTokenFilter(jwtProvider), JwtUsernamePasswordAuthenticationFilter.class)
                 .authorizeRequests()
                 .antMatchers("/api/auth/**", "/login"  , "/swagger-ui/**", "/swagger-resources/**",
-                        "/v2/api-docs**", "/webjars/**"   ) .permitAll()
+                        "/v2/api-docs**", "/webjars/**" , "/test"  ) .permitAll()
                 .anyRequest().authenticated();
 
         http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
