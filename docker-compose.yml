@@ -6,7 +6,10 @@ services:
     build: ./
     ports:
       - "8080:9090"
+    volumes:
+      - "$PWD:/test_volume"
     depends_on:
+
       - postgresqldb
   postgresqldb:
     image: postgres
