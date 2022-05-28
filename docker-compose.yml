@@ -5,12 +5,12 @@ services:
     image: springboot-postgresql
     build: ./
     ports:
-      - "8080:8080"
+      - "9090:9090"
     depends_on:
       - postgresqldb
   postgresqldb:
     image: postgres
-    ports: 
+    ports:
       - "5432:5432"
     environment:
       - POSTGRES_PASSWORD=postgres
