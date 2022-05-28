@@ -24,7 +24,7 @@ pipeline {
      sh 'docker-compose ps'
      sh 'docker-compose rm'
      sh 'docker-compose build'
-     sh 'docker-compose up'
+     sh 'docker-compose up -d'
 
       }
     }
