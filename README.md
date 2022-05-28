@@ -31,7 +31,7 @@ Framework - > java/spring boot
 Security - > Spring security / jwt 
 
 
-After running the application, just type the  [local url for Swagger UI](http://localhost:8080/swagger-ui/index.html) in your browser.
+After running the application, just type the  [local url for Swagger UI](http://ec2-34-227-157-176.compute-1.amazonaws.com:9090/swagger-ui/index.html) in your browser.
 
 
 
