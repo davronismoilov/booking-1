@@ -39,7 +39,7 @@ public class SeatsService  implements  BaseService<SeatDto> {
             .message("succes")
             .statusCode(12)
             .data(seatsRepository.findById(id).orElseThrow(
-                ()-> new CustomException("Not founs")
+                ()-> new CustomException("Not found")
             )).build();
     }
 
