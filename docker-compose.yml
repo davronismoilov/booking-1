@@ -5,7 +5,7 @@ services:
     image: springboot-postgresql
     build: ./
     ports:
-      - "8080:9090"
+      - "9090:8080"
     volumes:
       - "$PWD:/test_volume"
     depends_on:
