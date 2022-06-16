@@ -12,6 +12,8 @@ import static org.mockito.Mockito.when;
 
 public class SeatsServiceTest {
 
+
+
     @Test
     @DisplayName("Should return the seat when the seat is found")
     public void testGetByIdWhenSeatIsFound() {
@@ -20,8 +22,4 @@ public class SeatsServiceTest {
         assertEquals(12, 12);
 
     }
-
-
-
-
 }
