@@ -1,4 +1,4 @@
-FROM openjdk:11
+FROM openjdk:17
 
 COPY target/eureka-server.jar app.jar
 
