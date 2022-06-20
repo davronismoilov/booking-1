@@ -1,6 +1,6 @@
 FROM openjdk:11
 
-COPY target/MyProject-0.0.1-SNAPSHOT.jar app.jar
+COPY target/eureka-server.jar app.jar
 
 EXPOSE 8761
 
