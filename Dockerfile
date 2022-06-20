@@ -2,6 +2,6 @@ FROM openjdk:11
 
 COPY target/MyProject-0.0.1-SNAPSHOT.jar app.jar
 
-EXPOSE 9090
+EXPOSE 8761
 
 ENTRYPOINT ["java", "-jar", "/app.jar"]

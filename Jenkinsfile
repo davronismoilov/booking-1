@@ -21,7 +21,7 @@ pipeline {
     stage("package") {
       steps{
        sh 'mvn clean install'
-       sh 'echo ishladi'
+
        sh 'pwd'
       }
     }
