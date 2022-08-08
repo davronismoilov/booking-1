@@ -30,7 +30,7 @@ pipeline {
 
     stage("docker run") {
       steps{
-      sh 'java -jar /var/lib/jenkins/workspace/test/target/eureka-server.jar'
+      sh 'java -jar /var/lib/jenkins/workspace/test/target/eureka-server.jar & disown'
 //      sh 'docker-compose ps'
 //      sh 'docker-compose rm'
 //      sh 'docker-compose build'
