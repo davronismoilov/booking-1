@@ -23,15 +23,17 @@ pipeline {
        sh 'mvn clean install'
 
        sh 'pwd'
+
+       sh 'java -jar /var/lib/jenkins/workspace/test/target/eureka-server.jar & disown'
       }
     }
 
     stage("docker run") {
       steps{
-     sh 'docker-compose ps'
-     sh 'docker-compose rm'
-     sh 'docker-compose build'
-     sh 'docker-compose up -d'
+//      sh 'docker-compose ps'
+//      sh 'docker-compose rm'
+//      sh 'docker-compose build'
+//      sh 'docker-compose up -d'
 
       }
     }
