@@ -28,15 +28,15 @@ pipeline {
       }
     }
 
-    stage("docker run") {
-      steps{
-      sh 'pwd'
-//      sh 'docker-compose ps'
-//      sh 'docker-compose rm'
-//      sh 'docker-compose build'
-//      sh 'docker-compose up -d'
-
-      }
+//     stage("docker run") {
+//       steps{
+//       sh 'pwd'
+// //      sh 'docker-compose ps'
+// //      sh 'docker-compose rm'
+// //      sh 'docker-compose build'
+// //      sh 'docker-compose up -d'
+//
+//       }
     }
 }
 }
