@@ -24,19 +24,19 @@ pipeline {
 
        sh 'pwd'
 
-       sh 'java -jar /var/lib/jenkins/workspace/test/target/eureka-server.jar & disown'
+
       }
     }
 
-//     stage("docker run") {
-//       steps{
-//       sh 'pwd'
-// //      sh 'docker-compose ps'
-// //      sh 'docker-compose rm'
-// //      sh 'docker-compose build'
-// //      sh 'docker-compose up -d'
-//
-//       }
-    //}
+    stage("docker run") {
+      steps{
+      sh 'java -jar /var/lib/jenkins/workspace/test/target/eureka-server.jar'
+//      sh 'docker-compose ps'
+//      sh 'docker-compose rm'
+//      sh 'docker-compose build'
+//      sh 'docker-compose up -d'
+
+      }
+    }
 }
 }
