@@ -15,7 +15,7 @@ public class EurekaServerApplication {
 
     @GetMapping
     public String fun(){
-        return "Jenkins";
+        return "Jenkins o'zgardi";
     }
 
     public static void main(String[] args) {
